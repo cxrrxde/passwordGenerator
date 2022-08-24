@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="main__text">
+                <h1 class="main__title">
+                    Generate a <span class="main__green-title">random password</span>
+                </h1>
+                <p class="main__subtitle">
+                    Never use an insecure password again.
+                </p>
+            </div>
+            <div class="main__buttons">
+                <button class="generate__btn" onclick="generatePass();">Generate passwords</button>
+            </div>
+            <div class="main__passfields">
+                <input type="text" class="main__password" id="first-field"  value="" readonly>
+                <input type="text" class="main__password" id="second-field" value="" readonly>
+            </div>
+            <div class="main__slider-container">
+                <input type="range" class="main__range-slider" min="6" max="12" id="main-slider">
+                <p class="main__slider-text">Length: <span id="slider-value"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

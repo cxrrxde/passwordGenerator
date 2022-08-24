@@ -1,0 +1,121 @@
+@import url(../fonts/karla/karla.css);
+@import url(../fonts/Inter/stylesheet.css);
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #1F2937;
+}
+.main{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    padding: 115px 50px;
+}
+.main__title{
+    width: 354px;
+    font-family: 'Inter';
+    font-weight: 800px;
+    font-size: 40px;
+    line-height: 40px;
+    color:#fff;
+    margin-bottom: 14px;
+}
+.main__green-title{
+    color: #4ADF86;
+}
+.main__subtitle{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color:rgba(255,255,255,0.8);
+    margin-bottom: 50px;
+}
+.main__buttons::after{
+    content: "";
+    display: block;
+    width: 400px;
+    border:1px solid #273549;
+    margin-bottom: 35px;
+}
+.generate__btn{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color:#fff;
+    padding: 9px 17px;
+    border-radius: 6px;
+    border:none;
+    background:#10B981;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+.generate__btn:hover{
+    transition: .2s;
+    background:#059669;
+}
+.generate__btn:active{
+    transition: .2s;
+    background:#065F46;
+}
+.main__passfields{
+    display: flex;
+    justify-content: space-between;
+}
+.main__password{
+    border:none;
+    outline: none;
+    border-radius: 6px;
+    background: #273549;
+    padding: 4px 15px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color:#55F991;
+    text-align: center;
+    width: 190px;
+    cursor: pointer;
+}
+.main__password:not(:last-child){
+    margin-right: 24px;
+}
+.main__slider-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__range-slider{
+    width: 350px;
+    appearance: none;
+    outline: none;
+    background: #fff;
+    cursor: pointer;
+    height: 10px;
+    border-radius: 4px;
+}
+.main__range-slider::-webkit-slider-thumb{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #10B981;
+    border-radius: 6px;
+}
+.main__slider-text{
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 20px;
+    color:rgba(255,255,255,0.8);
+}
+#slider-value{
+    color:#4ADF86;
+    font-size: 26px;
+    font-weight: 700;
+}
