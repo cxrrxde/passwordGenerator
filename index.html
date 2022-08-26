@@ -29,6 +29,16 @@
                 <input type="range" class="main__range-slider" min="6" max="12" id="main-slider">
                 <p class="main__slider-text">Length: <span id="slider-value"></span></p>
             </div>
+            <div class="main__toggle">
+                <div class="main__toggle-wrapper">
+                    <label for="symbols-toggle" class="main__symbols-label">Enable symbols</label>
+                    <input type="checkbox" class="main__toggle-symbols" id="symbols-toggle" onchange="enableCheckbox()">
+                </div>
+                <div class="main__toggle-wrapper">
+                    <label for="numbers-toggle" class="main__numbers-label">Enable numbers</label>
+                    <input type="checkbox" class="main__toggle-numbers" id="numbers-toggle" onchange="enableCheckbox()">
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/index.js"></script>
